@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+    <!-- style css -->
+    <style>
+        #form1 {
+            border: 1px solid #000;
+            width: 400px;
+            padding: 16px;
+        }
+    
+        .em1 {
+            width: 90%;
+        }
+
+        .phone {
+            width: 20%;
+            margin-bottom: 16px;
+        }
+    </style>
+
+    <!-- form -->
+    <form method="get" action="simpleform.html" id="form1">
+        <h1>Order Form</h1>
+
+        <p>What would you like to buy?</p>
+        <select>
+            <option>A</option>
+            <option>B (+  0.5$)</option>
+            <option>C (+  0.5$)</option>
+        </select>
+
+        <p>How many would you like to buy?</p>
+        <input type="radio" name="rdo">1 - 10$ <br>
+        <input type="radio" name="rdo">2 - 20$ <br>
+        <input type="radio" name="rdo">3 - 30$ <br>
+
+        <h3>Name</h3>
+        <div class="name1">
+            <input type="text" placeholder="FirstName" class="ip1" name="firstname">
+            <input type="text" placeholder="LastName" class="ip1" name="lastname">
+        </div>
+
+        <h3>Email</h3>
+        <input type="email" class="em1" name="email">
+
+        <h3>Phone Number</h3>
+        <input type = "number" name="phone1" class="phone"/> -
+        <input type = "number" name="phone2" class="phone"/> -
+        <input type = "number" name="phone3" class="phone"/>
+        <br>
+        <input type="submit" name="sub" id="submit-btn">
+    </form>
+</body>
+</html>
